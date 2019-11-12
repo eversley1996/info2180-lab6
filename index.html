@@ -3,9 +3,26 @@
     <head>
         <title>Superheroes</title>
         <script src="app.js"></script>
+        <link rel= "stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <h1>Avengers Character Search</h1>
-        <button type="button" id="btn">Search</button>
+        <div id="mainheading"> 
+            <h1>Avengers Character Search</h1>
+        </div>
+    
+        <div id="searchArea">
+            <h2><strong>Search by Full Name or Alias</strong></h2>
+            <form onsubmit="loadPage()" method="GET" >
+                <input type="text" id="queryTxtBox" placeholder="e.g Steve Rodgers or Captain America">
+                <input type="button" id="btn" value="Search"  >   
+            </form><br>
+        </div>
+
+        
+        <div id="display">
+            <h4 id="resultHeading">Result:</h4>
+            <div id="resultArea"></div>
+        </div>
+
     </body>
 </html>
